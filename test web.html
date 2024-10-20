@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Upload Test</title>
+</head>
+<body>
+    <h1>Upload PDF</h1>
+    <form id="uploadForm">
+        <input type="file" id="fileInput" accept=".pdf" />
+        <button type="submit">Upload</button>
+    </form>
+    <script>
+        document.getElementById('uploadForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const fileInput = document.getElementById('fileInput');
+            if (fileInput.files.length > 0) {
+                console.log('File selected:', fileInput.files[0].name);
+                // Simulate a PDF upload action
+                alert('PDF file selected: ' + fileInput.files[0].name);
+            } else {
+                alert('No file selected.');
+            }
+        });
+    </script>
+</body>
+</html>

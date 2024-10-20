@@ -33,7 +33,7 @@ Ensure you have **Java 17** installed. You can verify this by running:
 
 ```bash
 java -version
-
+```
 Next, navigate to the pdf-inspector-backend directory and install the dependencies using Maven:
 
 ```bash

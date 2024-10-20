@@ -25,6 +25,7 @@ Clone the repository to your local machine:
 ```bash
 git clone https://github.com/benhuri/pdf-inspector.git
 cd pdf-inspector
+```
 
 ## 2. Backend Service Setup
 

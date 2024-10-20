@@ -26,7 +26,7 @@ Clone the repository to your local machine:
 git clone https://github.com/benhuri/pdf-inspector.git
 cd pdf-inspector
 ```
----
+
 
 ## 2. Backend Service Setup
 
@@ -56,7 +56,7 @@ The backend will be running at http://localhost:8080.
 The backend provides the following API endpoint:
 
 - **POST** `/api/upload`: Receives a PDF file's Base64 content and inspects it.
----
+
 
 ## 3. Chrome Extension Setup
 
@@ -68,14 +68,14 @@ The backend provides the following API endpoint:
 
 ### Step 2: Using the Extension
 1. Go to ChatGPT or any other website that support PDF attaching, and select a PDF file.
----
+
 
 ## 4. Test Webpage
 
 I've added a test webpage where you can choose a PDF file to see the inspection results. This allows you to try out the **PDF Inspector** extension and verify how the backend processes PDF files.
 
 You can access the test webpage and upload a PDF to inspect its content.
----
+
 
 ## 5. Inspecting Logs
 
@@ -84,7 +84,7 @@ You can access the test webpage and upload a PDF to inspect its content.
   - If the PDF passed the inspection, search for `"File inspection passed successfully!"`.
   
 - **Extension Logs:** Open the browser's Developer Tools (F12 or `Ctrl+Shift+I`), go to the Console tab, and view logs related to the PDF content and inspection results.
----
+
 
 ## Dependencies
 

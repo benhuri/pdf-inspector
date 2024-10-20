@@ -68,14 +68,21 @@ The backend provides the following API endpoint:
 
 ---
 
-## 4. Inspecting Logs
+## 4. Test Webpage
 
-### Backend Logs:
-- Check `logs/pdfInspector.log` for detailed logs, or view them in the console where you started the service.
+I've added a test webpage where you can choose a PDF file to see the inspection results. This allows you to try out the **PDF Inspector** extension and verify how the backend processes PDF files.
 
-### Extension Logs:
-- Open the browser's **Developer Tools** (F12 or `Ctrl+Shift+I`), go to the **Console** tab, and view logs related to the PDF content and inspection results.
+You can access the test webpage and upload a PDF to inspect its content.
 
+---
+
+## 5. Inspecting Logs
+
+- **Backend Logs:** Check `logs/pdfInspector.log` for detailed logs, or view them in the console where you started the service.
+  - If the PDF inspection found secrets or flagged content, search the log for `"File inspection didn't pass"`.
+  - If the PDF passed the inspection, search for `"File inspection passed successfully!"`.
+  
+- **Extension Logs:** Open the browser's Developer Tools (F12 or `Ctrl+Shift+I`), go to the Console tab, and view logs related to the PDF content and inspection results.
 ---
 
 ## Dependencies

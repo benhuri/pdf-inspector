@@ -25,3 +25,25 @@ Clone the repository to your local machine:
 ```bash
 git clone https://github.com/benhuri/pdf-inspector.git
 cd pdf-inspector
+
+## 2. Backend Service Setup
+
+### Step 1: Install Dependencies
+Ensure you have **Java 17** installed. You can verify this by running:
+
+```bash
+java -version
+
+Next, navigate to the pdf-inspector-backend directory and install the dependencies using Maven:
+
+```bash
+cd pdf-inspector-backend
+mvn clean install
+
+### Step 2: Running the Backend Service
+Once dependencies are installed, you can run the Spring Boot backend service:
+
+```bash
+mvn spring-boot:run
+
+The backend will be running at http://localhost:8080.

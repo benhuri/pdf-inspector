@@ -39,11 +39,13 @@ Next, navigate to the pdf-inspector-backend directory and install the dependenci
 ```bash
 cd pdf-inspector-backend
 mvn clean install
+```
 
 ### Step 2: Running the Backend Service
 Once dependencies are installed, you can run the Spring Boot backend service:
 
 ```bash
 mvn spring-boot:run
+```
 
 The backend will be running at http://localhost:8080.

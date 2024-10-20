@@ -50,3 +50,43 @@ mvn spring-boot:run
 ```
 
 The backend will be running at http://localhost:8080.
+
+### Step 3: API Endpoint
+The backend provides the following API endpoint:
+
+- **POST** `/api/upload`: Receives a PDF file's Base64 content and inspects it.
+## 3. Chrome Extension Setup
+
+### Step 1: Load the Extension
+1. Open Google Chrome and navigate to `chrome://extensions/`.
+2. Enable **Developer Mode** (top-right corner).
+3. Click on **Load Unpacked** and select the `pdf-inspector-extension` directory from the cloned repository.
+4. The extension should now appear in your Chrome toolbar.
+
+### Step 2: Using the Extension
+1. Go to ChatGPT or any other website that support PDF attaching, and select a PDF file.
+
+---
+
+## 4. Inspecting Logs
+
+### Backend Logs:
+- Check `logs/pdfInspector.log` for detailed logs, or view them in the console where you started the service.
+
+### Extension Logs:
+- Open the browser's **Developer Tools** (F12 or `Ctrl+Shift+I`), go to the **Console** tab, and view logs related to the PDF content and inspection results.
+
+---
+
+## Dependencies
+
+### Backend
+- **Spring Boot** 3.1.4
+- **Apache PDFBox** 2.0.24
+- **Log4j2** for logging
+- **JSON Library** for processing API responses
+- 
+### Extension
+- **Chrome Manifest Version 3**
+- Uses **JavaScript** for file reading, Base64 conversion, and communication with the backend.
+
